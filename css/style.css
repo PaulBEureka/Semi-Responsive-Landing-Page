@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    line-height: 1.6em;
+    margin:0px;
+    max-width: 1440px;
+}
+
+body{
+    font-size: 18px;
+}
+
+
+footer{
+    height: 500px;
+    background-color: hsl(168, 64%, 64%);
+    display: grid;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+footer h1{
+    font-family:  'Barlow', sans-serif;
+    font-weight: 600px;
+    opacity: 0.5;
+    height: 0px;
+    margin-top: 70px;
+    padding-bottom: 0px;
+    justify-self: center;
+    
+}
+
+footer .links{
+    font-family:  'Barlow', sans-serif;
+    display: block;
+    justify-self: center;
+    margin-top: 0px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+footer .links li{
+    text-decoration: none;
+    display: inline;
+    margin: 25px;
+    
+}
+
+footer .links li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    opacity: 0.4;
+}
+
+
+footer .links li a:hover{
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+
+footer .icons{
+    display: block;
+    justify-self: center;
+    margin-top: 0px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+footer .icons li{
+    text-decoration: none;
+    display: inline;
+    margin: 10px;
+}
+
+footer .icons li a:hover{
+    filter: invert(0%) sepia(0%) saturate(21%) hue-rotate(325deg) brightness(92%) contrast(104%);
+}
+
+
+.navbar nav {
+    font-family:  'Barlow', sans-serif;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 100%;
+    color: white;
+    
+}
+
+.navbar nav ul li{
+    display: inline;
+    margin: 0px 15px;
+    font-size: 15px;
+}
+
+.navbar nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.navbar nav ul li a:hover{
+    text-decoration: none;
+    color:black;
+}
+
+.navbar nav ul li:last-child a{
+    background-color: white;
+    padding: 10px 18px;
+    border-radius: 40px;
+    color:black;
+}
+
+.navbar nav ul li:last-child a:hover{
+    transition-property: background-color;
+    transition-duration: 1s;
+    background-color: gray;
+    color:white;
+}
+
+.navbar nav h3{
+    color: white;
+}
+
+.landing-orange{
+    background-image: url("../images/desktop/image-header.jpg");
+    width: 100%;
+    height: 25em;
+    
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+}
+
+.landing-orange h1{
+    font-family: "Fraunces", serif;
+    word-spacing: 10px;
+    position: absolute;
+    top:100px;
+    justify-self: center;
+    color:white;
+}
+
+.landing-orange img{
+    position: absolute;
+    justify-self: center;
+    top:200px;
+    height: 50px;
+}
+
+
+.container{
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container .item-style-1{
+    flex-basis: 50%;
+    display: grid; 
+    justify-content: center; 
+    align-items: center; 
+
+}
+
+.container .item-style-1 img{
+    height: 100%;
+    width: 100%;
+    display: grid;
+
+}
+
+
+.container h2{
+    font-family: "Fraunces", serif;
+    margin-bottom: 20px;
+}
+
+.container p{
+    font-size: medium;
+}
+
+.container .item-style-1 .item-article .description{
+    font-family:  'Barlow', sans-serif;
+    opacity: 0.4;
+    font-weight: 600;
+}
+
+.container .item-style-1 .item-article{
+    width: 405px;
+    position: relative;
+}
+
+.container .item-style-1 .item-article .learn-more-1 , .learn-more-2{
+    font-family: "Fraunces", serif;
+    font-weight:700;
+    
+}
+
+.container .item-style-1 .item-article .learn-more-1::before {
+    content: "";
+    position: absolute;
+    left: 57px;
+    bottom:2px;
+    width: 130px;
+    height: 10px;
+    transform: skew(-12deg) translateX(-50%);
+    background: yellow;
+    z-index: -1;
+    border-radius: 15px;
+    opacity: 0.3;
+  }
+
+.container .item-style-1 .item-article .learn-more-2::before {
+    content: "";
+    position: absolute;
+    left: 57px;
+    bottom:2px;
+    width: 130px;
+    height: 10px;
+    transform: skew(-12deg) translateX(-50%);
+    background: red;
+    z-index: -1;
+    border-radius: 15px;
+    opacity: 0.2;
+}
+
+
+.container .item-style-2{
+    flex-basis: 50%;
+    display: grid;
+    position: relative;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container .item-style-2 img{
+    height: inherit;
+    width: 100%;
+}
+
+.container .item-style-2 .item-article-2{
+    justify-self: center;
+    align-self: center;
+    width: 350px;
+    position: absolute;
+    bottom: 10%;
+    display: grid;
+}
+
+.container .item-style-2 .item-article-2 h2{
+    justify-self: center;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+.container .item-style-2 .item-article-2 p{
+    font-family:  'Barlow', sans-serif;
+    opacity: 0.5;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.container-2{
+    height: 700px;
+    position: relative;
+    display: grid;
+}
+
+.container-2 h3{
+    justify-self: center;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    opacity: 0.3;
+    top:150px;
+    position: absolute;
+}
+
+.container-2 .testimonials{
+    top:250px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.container-2 .testimonials .item-style-3{
+    flex-basis: 33%;
+    display: grid;
+    
+}
+
+.container-2 .testimonials .item-style-3 img{
+    align-self: center;
+    justify-self: center;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 50px;
+}
+
+.container-2 .testimonials .item-style-3 .quote{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    width: 315px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    opacity: 0.6;
+    font-size: medium;
+}
+
+.container-2 .testimonials .item-style-3 h4{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.container-2 .testimonials .item-style-3 .position{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    opacity: 0.3;
+    font-size: small;
+}
+
+
+.container-3{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container-3 img{
+    flex-basis: 25%;
+    width: 25%;
+}
+
