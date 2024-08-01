@@ -170,14 +170,15 @@ footer .icons li a:hover{
 
 .container .item-style-1{
     flex-basis: 50%;
+    width: fit-content;
     display: grid; 
     justify-content: center; 
     align-items: center; 
+    flex-shrink: 0;
 
 }
 
 .container .item-style-1 img{
-    height: 100%;
     width: 100%;
     display: grid;
 
@@ -201,6 +202,7 @@ footer .icons li a:hover{
 
 .container .item-style-1 .item-article{
     width: 405px;
+    text-wrap: wrap;
     position: relative;
 }
 
@@ -245,6 +247,7 @@ footer .icons li a:hover{
     position: relative;
     justify-content: center; 
     align-items: center; 
+    flex-shrink: 0;
 }
 
 .container .item-style-2 img{
@@ -278,23 +281,23 @@ footer .icons li a:hover{
 
 
 .container-2{
-    height: 700px;
     position: relative;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
 
 .container-2 h3{
-    justify-self: center;
     font-family: "Fraunces", serif;
     font-weight: 700;
     opacity: 0.3;
-    top:150px;
-    position: absolute;
+    margin-bottom: 50px;
 }
 
 .container-2 .testimonials{
     top:250px;
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -304,7 +307,7 @@ footer .icons li a:hover{
 .container-2 .testimonials .item-style-3{
     flex-basis: 33%;
     display: grid;
-    
+    flex-shrink: 0;
 }
 
 .container-2 .testimonials .item-style-3 img{
@@ -357,5 +360,6 @@ footer .icons li a:hover{
 .container-3 img{
     flex-basis: 25%;
     width: 25%;
+    flex-shrink: 0;
 }
 
